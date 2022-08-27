@@ -119,7 +119,8 @@ function addEmployee() {
     inquirer.prompt([{
         type: "list",
         message: " Do you add Engineer or Intern",
-        choices: ["Engineer", "Intern"]
+        choices: ["Engineer", "Intern"],
+        name: "selection"
     }])
         .then(response => {
             if (response.selection == "Engineer") {
